@@ -1,0 +1,54 @@
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Drupal core and contrib files (if generated via composer)
+core/
+modules/contrib/
+themes/contrib/
+profiles/contrib/
+
+# Drupal site files
+sites/*/files/
+sites/*/private/
+sites/simpletest/
+sites/default/settings*.php
+
+# Configurations and cache
+/sites/*/config_*/
+sites/*/files/php
+/sites/*/services*.yml
+/sites/*/development.services.yml
+/sites/*/local.settings.php
+/sites/*/local.services.yml
+/sites/*/default.settings.php
+sites/*/default.services.yml
+/sites/default/files/css/
+sites/default/files/js/
+sites/default/files/php/
+sites/default/files/styles/
+sites/default/files/tmp/
+sites/default/files/translations/
+
+# IDEs and local settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.envrc
+
+# Drush
+.drush/
+.drushrc.php
+drush-backups/

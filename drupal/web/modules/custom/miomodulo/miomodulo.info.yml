@@ -1,0 +1,16 @@
+type: module
+name: 'Mio modulo'
+description: 'Mio primo modulo custom.'
+package: "Corso Drupal" # per raggruppare i moduli
+core_version_requirement: "^11"
+# php: 8.1
+# configure: miomodulo.admin_settings # route della configurazione che compare in Estendi sul modulo
+# tags:
+#   - developer
+
+# Information added by Drupal.org packaging script on 2025-07-07
+version: '1.0'
+# project: 'devel'
+# datestamp: 1751916161
+# dependencies:
+#   - drupal:text

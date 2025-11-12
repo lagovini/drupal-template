@@ -19,8 +19,9 @@ class MioBlocco extends BlockBase {
      * 
      */
     public function build() {
+        $now = \Drupal::service('date.formatter')->format(time(),'custom', 'd/m/Y H:i'); #servizio Drupal
         return [
-            '#markup' => "<h2>mio blocco custom</h2>",
+            '#markup' => "<h2>mio blocco custom adesso sono $now</h2>",
         ];
     }
 }

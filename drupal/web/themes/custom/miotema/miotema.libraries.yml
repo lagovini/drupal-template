@@ -5,4 +5,4 @@ global-style:
 
 global-scripts:
   js:
-    js/script.js
+    js/script.js: {}

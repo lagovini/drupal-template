@@ -1,54 +1,36 @@
-# Composer dependencies
-/vendor/
-composer.lock
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+#
+# follows official upstream conventions:
+# https://www.drupal.org/docs/develop/using-composer
 
-# Drupal core and contrib files (if generated via composer)
-core/
-modules/contrib/
-themes/contrib/
-profiles/contrib/
+# Ignore configuration files that may contain sensitive information
+/web/sites/*/*settings.*.php
+/web/sites/*/*services*.yml
 
-# Drupal site files
-sites/*/files/
-sites/*/private/
-sites/simpletest/
-sites/default/settings*.php
+# Ignore paths that may contain user-generated content
+/web/sites/*/files
+/web/sites/*/public
+/web/sites/*/private
+/web/sites/*/files-public
+/web/sites/*/files-private
 
-# Configurations and cache
-/sites/*/config_*/
-sites/*/files/php
-/sites/*/services*.yml
-/sites/*/development.services.yml
-/sites/*/local.settings.php
-/sites/*/local.services.yml
-/sites/*/default.settings.php
-sites/*/default.services.yml
-/sites/default/files/css/
-sites/default/files/js/
-sites/default/files/php/
-sites/default/files/styles/
-sites/default/files/tmp/
-sites/default/files/translations/
+# Ignore paths that may contain temporary files
+/web/sites/*/translations
+/web/sites/*/tmp
+/web/sites/*/cache
 
-# IDEs and local settings
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
-*.tmp
+# Ignore vendor dependencies and scripts
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Environment files
 .env
-.env.local
-.envrc
-
-# Drush
-.drush/
-.drushrc.php
-drush-backups/
+*.key
+/private
+test

@@ -3,3 +3,6 @@ type: theme
 description: 'Mio tema basato sul tema Bootstrap5'
 core_version_requirement: ^11.0
 'base theme': bootstrap5
+
+libraries:
+  - miotema/global-style

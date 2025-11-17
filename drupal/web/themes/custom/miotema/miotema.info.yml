@@ -1,9 +1,21 @@
 name: Miotema
 type: theme
-description: 'Mio tema basato sul tema Bootstrap5'
+description: 'Miotema basato sul tema Bootstrap5'
 core_version_requirement: ^11.0
 'base theme': bootstrap5
 
 libraries:
   - miotema/global-style
   - miotema/global-scripts
+
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+  miaregion: Regione tecnica

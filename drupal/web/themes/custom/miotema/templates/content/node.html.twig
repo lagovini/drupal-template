@@ -73,13 +73,15 @@
 %}
 {{ attach_library('bootstrap5/node') }}
 <article{{ attributes.addClass(classes) }}>
-  <h3>TEST da TWIG</h3>
+  <div class="h1">TEST da TWIG</div>
+
   {% if is_anonymous %}
-    <div>ciao, devi loggarti</div>
-  {% else %}
-    <div>ciao!!!</div>
-    {{ content.body }}
+   <div> Ciao devi loggarti</div>
+   {% else %}
+   {{ ciao }}
+   {{ content.body }}
   {% endif %}
+
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -99,7 +101,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content|without('body') }}
+   {{ content|without('body') }}
   </div>
-  
+
 </article>

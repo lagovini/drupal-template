@@ -6,31 +6,30 @@
 # https://www.drupal.org/docs/develop/using-composer
 
 # Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings.*.php
-/web/sites/*/*services*.yml
+/drupal/web/sites/*/*settings.*.php
+/drupal/web/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+/drupal/web/sites/*/files
+/drupal/web/sites/*/public
+/drupal/web/sites/*/private
+/drupal/web/sites/*/files-public
+/drupal/web/sites/*/files-private
 
 # Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+/drupal/web/sites/*/translations
+/drupal/web/sites/*/tmp
+/drupal/web/sites/*/cache
 
 # Ignore vendor dependencies and scripts
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
-.DS_Store
-.env
-*.key
-/private
-test
+/drupal/composer
+/drupal/robo.phar
+/drupal/robo
+/drupal/drush.phar
+/drupal/drush
+/drupal/drupal.phar
+/drupal/.DS_Store
+/drupal/.env
+/drupal/*.key
+/drupal/private
+/drupal/test

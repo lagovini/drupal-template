@@ -1,8 +1,11 @@
 <?php
 
 function miotema_preprocess_node(&$variables) : void {
-    dump($variables);
-    $account = \Drupal::currentUser();
-    dump($account->isAnonymous());
-    $variables['is_anonymous'] = $account->isAnonymous();
+  dump('miotema_preprocess_node');
+  dump($variables);
+  $account = \Drupal::currentUser();
+  $variables['is_anonymous'] = $account->isAnonymous();
+  $variables['ciao'] = 'Ciao caro';
+  dump('add variable miotema_preprocess_node');
+  dump($variables);
 }

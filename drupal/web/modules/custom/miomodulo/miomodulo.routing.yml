@@ -1,9 +1,15 @@
 miomodulo.miapagina:
-  path: '/miomodulo/miapagina'
+  path: '/miomodulo/mia-pagina'
   defaults:
     _controller: '\Drupal\miomodulo\Controller\MiomoduloController::miaPagina'
-    _title: 'Titolo Mia pagina custom' # stampato in una regione specifica
-#  options:   
-#    _admin_route: TRUE # se route di backend visualizzate con il tema di amministrazione
+    _title: 'Titolo Mia pagina custom'
+  requirements:
+    _permission: 'access content'
+
+miomodulo.mioform:
+  path: '/miomodulo/mio-form'
+  defaults:
+    _form: '\Drupal\miomodulo\Form\MioForm'
+    _title: 'Form di esempio'
   requirements:
     _permission: 'access content'

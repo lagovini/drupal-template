@@ -36,12 +36,20 @@ use Drupal\Core\Block\BlockBase;
       ],
     ];
 
+    $nome = \Drupal::config('miomodulo.settings')->get('nome_salvato');
+
     dump($payload);
+
+    $form = \Drupal::formBuilder()->getForm('Drupal\miomodulo\Form\MioForm');
 
     return [
       '#theme' => 'miomodulo_mioblocco',
-      '#now' => $data,
+      '#now' => $nome,
       '#payload' => $payload,
+      '#form' => $form,
+      '#cache' => [
+        'max-age' => 0,
+      ],
     ];
   }
 

@@ -1,0 +1,40 @@
+{#
+/**
+* twig mio blocco
+* now: ora attuale
+* payload: dati recuperati da API: www.miosito.it/api/...
+*
+*/
+#}
+
+	Ciao dal twig
+	{{ now }}
+
+	<h2>
+		{{ payload.title }}
+	</h2>
+
+	{% for item in payload.items %}
+		<div>
+			{{ item.des }}
+			- cfu:
+			{{ item.peso }}
+		</div>
+	{% endfor %}
+
+	<div class="row py-4">
+		{% for item in payload.items %}
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">{{ item.des }}</h5>
+						<p class="card-text">
+							cfu:
+							{{ item.peso }}
+						</p>
+						<a href="#" class="btn btn-primary">Vai</a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>

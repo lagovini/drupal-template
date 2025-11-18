@@ -106,3 +106,19 @@
     $form['actions']['submit']['#submit'][] = 'my_module_upload_enabled_types_submit';
   }
 }
+
+/**
+* Implementazione hook_heme
+* https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook_theme/11.x
+*/
+function miomodulo_theme() {
+  return [
+    'miomodulo_mioblocco' => [
+       'variables' => [
+          'now' => NULL,
+          'payload' => NULL,
+       ],
+       'template' => 'block/miomodulo-mioblocco'
+    ]
+  ];
+}
